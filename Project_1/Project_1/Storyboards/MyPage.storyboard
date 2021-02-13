@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lg5-0D-P5N">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,15 +11,13 @@
         <!--MyPage-->
         <scene sceneID="dCU-FI-1IG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FLx-Hl-vi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Lg5-0D-P5N" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4JO-aj-Ly1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-QR-yMJ">
-                                <rect key="frame" x="353" y="44" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX6-QR-yMJ">
+                                <rect key="frame" x="336" y="54" width="39" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" systemColor="labelColor"/>
@@ -31,23 +29,45 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fWr-hY-3tS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rX6-QR-yMJ" firstAttribute="top" secondItem="fWr-hY-3tS" secondAttribute="top" constant="10" id="Mmj-yf-B5S"/>
+                            <constraint firstItem="fWr-hY-3tS" firstAttribute="trailing" secondItem="rX6-QR-yMJ" secondAttribute="trailing" constant="15" id="nex-DG-efb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="MyPage" id="OtE-cn-xNe"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLx-Hl-vi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="42" y="961"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="O2E-Fp-l88">
             <objects>
-                <viewController id="rWS-8O-jJl" sceneMemberID="viewController">
+                <viewController id="rWS-8O-jJl" customClass="LoginViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="clS-YI-aBj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="구글 아이디로 로그인하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fY-U8-Zl0">
+                                <rect key="frame" x="110" y="230" width="170" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fkd-Ft-UU3" customClass="GIDSignInButton">
+                                <rect key="frame" x="75" y="291" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Spq-7X-isG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZGC-rp-qZb"/>
+                    <connections>
+                        <outlet property="signInButton" destination="Fkd-Ft-UU3" id="0Nb-K9-6BO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCh-Qo-KT0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
