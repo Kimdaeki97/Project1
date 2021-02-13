@@ -13,6 +13,10 @@
 		E091D22A25D7F0CF00C308B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E091D22825D7F0CF00C308B6 /* Main.storyboard */; };
 		E091D22C25D7F0D000C308B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E091D22B25D7F0D000C308B6 /* Assets.xcassets */; };
 		E091D22F25D7F0D000C308B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E091D22D25D7F0D000C308B6 /* LaunchScreen.storyboard */; };
+		E091D23925D7F2EB00C308B6 /* First.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E091D23825D7F2EB00C308B6 /* First.storyboard */; };
+		E091D23C25D7F2F300C308B6 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E091D23B25D7F2F300C308B6 /* Second.storyboard */; };
+		E091D23F25D7F30000C308B6 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E091D23E25D7F30000C308B6 /* Third.storyboard */; };
+		E091D24225D7F30C00C308B6 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E091D24125D7F30C00C308B6 /* MyPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E091D22B25D7F0D000C308B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E091D22E25D7F0D000C308B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E091D23025D7F0D000C308B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E091D23825D7F2EB00C308B6 /* First.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = First.storyboard; sourceTree = "<group>"; };
+		E091D23B25D7F2F300C308B6 /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		E091D23E25D7F30000C308B6 /* Third.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
+		E091D24125D7F30C00C308B6 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				E091D22225D7F0CF00C308B6 /* AppDelegate.swift */,
 				E091D22425D7F0CF00C308B6 /* SceneDelegate.swift */,
-				E091D22625D7F0CF00C308B6 /* ViewController.swift */,
-				E091D22825D7F0CF00C308B6 /* Main.storyboard */,
+				E091D24425D7F5CC00C308B6 /* Controllers */,
+				E091D23725D7F29E00C308B6 /* Storyboards */,
 				E091D22B25D7F0D000C308B6 /* Assets.xcassets */,
 				E091D22D25D7F0D000C308B6 /* LaunchScreen.storyboard */,
 				E091D23025D7F0D000C308B6 /* Info.plist */,
 			);
 			path = Project_1;
+			sourceTree = "<group>";
+		};
+		E091D23725D7F29E00C308B6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E091D22825D7F0CF00C308B6 /* Main.storyboard */,
+				E091D23825D7F2EB00C308B6 /* First.storyboard */,
+				E091D23B25D7F2F300C308B6 /* Second.storyboard */,
+				E091D23E25D7F30000C308B6 /* Third.storyboard */,
+				E091D24125D7F30C00C308B6 /* MyPage.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E091D24425D7F5CC00C308B6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E091D22625D7F0CF00C308B6 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +155,10 @@
 				E091D22F25D7F0D000C308B6 /* LaunchScreen.storyboard in Resources */,
 				E091D22C25D7F0D000C308B6 /* Assets.xcassets in Resources */,
 				E091D22A25D7F0CF00C308B6 /* Main.storyboard in Resources */,
+				E091D23C25D7F2F300C308B6 /* Second.storyboard in Resources */,
+				E091D24225D7F30C00C308B6 /* MyPage.storyboard in Resources */,
+				E091D23F25D7F30000C308B6 /* Third.storyboard in Resources */,
+				E091D23925D7F2EB00C308B6 /* First.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
