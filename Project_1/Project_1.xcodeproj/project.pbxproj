@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B7E84465D23ACBAB62EC4942 /* Pods_Project_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C4D67DF9FBC824CAFA828A /* Pods_Project_1.framework */; };
+		E0306E6C25DB6ADC0061BD62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0306E6B25DB6ADC0061BD62 /* RegisterViewController.swift */; };
 		E091D22325D7F0CF00C308B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091D22225D7F0CF00C308B6 /* AppDelegate.swift */; };
 		E091D22525D7F0CF00C308B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091D22425D7F0CF00C308B6 /* SceneDelegate.swift */; };
 		E091D22725D7F0CF00C308B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091D22625D7F0CF00C308B6 /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		8388EB4ABCD61374E8B89A57 /* Pods-Project_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project_1.release.xcconfig"; path = "Target Support Files/Pods-Project_1/Pods-Project_1.release.xcconfig"; sourceTree = "<group>"; };
 		A4C4D67DF9FBC824CAFA828A /* Pods_Project_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0306E6B25DB6ADC0061BD62 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E091D21F25D7F0CF00C308B6 /* Project_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E091D22225D7F0CF00C308B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E091D22425D7F0CF00C308B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				E091D22625D7F0CF00C308B6 /* ViewController.swift */,
 				E091D26C25D7FA4400C308B6 /* LoginViewController.swift */,
+				E0306E6B25DB6ADC0061BD62 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E091D26D25D7FA4400C308B6 /* LoginViewController.swift in Sources */,
+				E0306E6C25DB6ADC0061BD62 /* RegisterViewController.swift in Sources */,
 				E091D22725D7F0CF00C308B6 /* ViewController.swift in Sources */,
 				E091D22325D7F0CF00C308B6 /* AppDelegate.swift in Sources */,
 				E091D22525D7F0CF00C308B6 /* SceneDelegate.swift in Sources */,
