@@ -73,6 +73,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E0306E6E25DB6E330061BD62 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				E091D26C25D7FA4400C308B6 /* LoginViewController.swift */,
+				E0306E6B25DB6ADC0061BD62 /* RegisterViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		E091D21625D7F0CF00C308B6 = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +130,8 @@
 		E091D24425D7F5CC00C308B6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E0306E6E25DB6E330061BD62 /* MyPage */,
 				E091D22625D7F0CF00C308B6 /* ViewController.swift */,
-				E091D26C25D7FA4400C308B6 /* LoginViewController.swift */,
-				E0306E6B25DB6ADC0061BD62 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
