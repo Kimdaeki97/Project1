@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="X2B-KU-en1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" id="U5N-xF-40P"/>
+                    <tabBarItem key="tabBarItem" title="Calender" image="calendar" catalog="system" id="U5N-xF-40P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCM-7P-Aeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +26,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

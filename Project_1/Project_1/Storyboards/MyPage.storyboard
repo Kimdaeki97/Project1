@@ -34,7 +34,7 @@
                             <constraint firstItem="fWr-hY-3tS" firstAttribute="trailing" secondItem="rX6-QR-yMJ" secondAttribute="trailing" constant="15" id="nex-DG-efb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MyPage" id="OtE-cn-xNe"/>
+                    <tabBarItem key="tabBarItem" title="MyPage" image="person.fill" catalog="system" selectedImage="person.fill" id="OtE-cn-xNe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FLx-Hl-vi3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +206,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

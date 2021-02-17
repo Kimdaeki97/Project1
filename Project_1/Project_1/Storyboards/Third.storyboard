@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Third-->
+        <!--Gym-->
         <scene sceneID="jSy-wn-PVE">
             <objects>
                 <viewController id="4IM-8n-PuL" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="Yfa-xd-9gQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" id="oZT-yZ-kjf"/>
+                    <tabBarItem key="tabBarItem" title="Gym" image="bolt.heart.fill" catalog="system" id="oZT-yZ-kjf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmp-jF-OrD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +26,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
