@@ -83,7 +83,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
             //error
         }
         
-    } 
+    }
     
     func createItem(name: String) {
         let newItem = ToDoListItem(context: context)
