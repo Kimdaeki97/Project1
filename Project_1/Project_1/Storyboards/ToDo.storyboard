@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="joy-Zd-Alj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Oq-Nu-ChP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To-do-->
+        <!--To Do List View Controller-->
         <scene sceneID="iV3-8m-uha">
             <objects>
-                <viewController id="joy-Zd-Alj" customClass="ViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="joy-Zd-Alj" customClass="ToDoListViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ck-u8-TuP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,9 +25,28 @@
                         <viewLayoutGuide key="safeArea" id="c76-a5-r9Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="To-do" image="list.bullet.rectangle" catalog="system" id="cQS-DR-boj"/>
+                    <navigationItem key="navigationItem" id="L4l-PD-8Mr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AGl-vS-JHw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028.985507246377" y="-469.41964285714283"/>
+        </scene>
+        <!--To-do-->
+        <scene sceneID="elV-jq-Shm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Oq-Nu-ChP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="To-do" image="list.bullet.rectangle" catalog="system" id="cQS-DR-boj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3A0-EA-vZ6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="joy-Zd-Alj" kind="relationship" relationship="rootViewController" id="iby-L4-G11"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJ1-6O-3KU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118.840579710145" y="-469.41964285714283"/>
         </scene>
