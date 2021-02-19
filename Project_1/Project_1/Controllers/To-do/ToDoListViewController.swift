@@ -26,7 +26,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        title = "할 일"
+        title = "To-do"
         view.addSubview(tableView)
         getAllItems()
         tableView.delegate = self
@@ -39,11 +39,11 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @objc private func didTapAdd() {
-        let alert = UIAlertController(title: "New Item",
-                                      message: "Enter new Item",
+        let alert = UIAlertController(title: "할일 추가",
+                                      message: "추가할 사항을 적어주세요.",
                                       preferredStyle: .alert)
         alert.addTextField(configurationHandler: nil)
-        alert.addAction(UIAlertAction(title: "Submit", style: .cancel, handler: { [weak self] _ in
+        alert.addAction(UIAlertAction(title: "추가", style: .cancel, handler: { [weak self] _ in
             guard let field = alert.textFields?.first, let text = field.text, !text.isEmpty else {
                 return
             }
@@ -66,7 +66,38 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
     }
 
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let item = models[indexPath.row]
+        
+        // 위에 didTapAdd 그대로 복사후 이름만 수정
+        let sheet = UIAlertController(title: "수정",
+                                      message: nil,
+                                      preferredStyle: .actionSheet)
+        sheet.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
+        sheet.addAction(UIAlertAction(title: "수정", style: .default, handler: { _ in
+            
+            let alert = UIAlertController(title: "수정하기",
+                                          message: "수정할 사항을 적어주세요",
+                                          preferredStyle: .alert)
+            alert.addTextField(configurationHandler: nil)
+            alert.textFields?.first?.text = item.name
+            alert.addAction(UIAlertAction(title: "저장", style: .cancel, handler: { [weak self] _ in
+                guard let field = alert.textFields?.first, let newName = field.text, !newName.isEmpty else {
+                    return
+                }
+                
+                self?.updateItem(item: item, newName: newName)
+            }))
+            
+            self.present(alert, animated: true)
+        }))
+        sheet.addAction(UIAlertAction(title: "삭제", style: .destructive, handler: { [weak self] _ in
+            self?.deleteItem(item: item)
+        }))
+        
+        present(sheet, animated: true)
+    }
     
     
     
@@ -104,6 +135,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         
         do {
             try context.save()
+            getAllItems()
         } catch {
             
         }
@@ -113,6 +145,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         item.name = newName
         do {
             try context.save()
+            getAllItems()
         } catch {
             
         }
