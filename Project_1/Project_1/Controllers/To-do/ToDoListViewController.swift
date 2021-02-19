@@ -26,7 +26,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        title = "CareData To Do List"
+        title = "할 일"
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
