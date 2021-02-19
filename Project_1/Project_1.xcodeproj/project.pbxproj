@@ -12,7 +12,7 @@
 		E0306E7125DCF5AB0061BD62 /* noun_person_2824791.png in Resources */ = {isa = PBXBuildFile; fileRef = E0306E7025DCF5AB0061BD62 /* noun_person_2824791.png */; };
 		E0306E7725DD0A710061BD62 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0306E7625DD0A710061BD62 /* SettingViewController.swift */; };
 		E0306E7B25DD22EB0061BD62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0306E7A25DD22EB0061BD62 /* HomeViewController.swift */; };
-		E07F8DA025DE39150019C06A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E07F8D9E25DE39150019C06A /* Model.xcdatamodeld */; };
+		E07F8DA025DE39150019C06A /* Project_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E07F8D9E25DE39150019C06A /* Project_1.xcdatamodeld */; };
 		E07F8DD725DE4DA30019C06A /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F8DD625DE4DA30019C06A /* ToDoListViewController.swift */; };
 		E07F8DDD25DE57450019C06A /* ToDoListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F8DDB25DE57450019C06A /* ToDoListItem+CoreDataClass.swift */; };
 		E07F8DDE25DE57450019C06A /* ToDoListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F8DDC25DE57450019C06A /* ToDoListItem+CoreDataProperties.swift */; };
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				E07F8DD325DE4CD90019C06A /* ToDoListItem */,
-				E07F8D9E25DE39150019C06A /* Model.xcdatamodeld */,
+				E07F8D9E25DE39150019C06A /* Project_1.xcdatamodeld */,
 				E091D25825D7F80800C308B6 /* GoogleService-Info.plist */,
 				E0306E7325DCF6700061BD62 /* images */,
 				E091D22225D7F0CF00C308B6 /* AppDelegate.swift */,
@@ -323,7 +323,7 @@
 				E091D26D25D7FA4400C308B6 /* LoginViewController.swift in Sources */,
 				E0306E6C25DB6ADC0061BD62 /* RegisterViewController.swift in Sources */,
 				E091D22725D7F0CF00C308B6 /* ViewController.swift in Sources */,
-				E07F8DA025DE39150019C06A /* Model.xcdatamodeld in Sources */,
+				E07F8DA025DE39150019C06A /* Project_1.xcdatamodeld in Sources */,
 				E07F8DD725DE4DA30019C06A /* ToDoListViewController.swift in Sources */,
 				E091D22325D7F0CF00C308B6 /* AppDelegate.swift in Sources */,
 				E091D22525D7F0CF00C308B6 /* SceneDelegate.swift in Sources */,
@@ -535,13 +535,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E07F8D9E25DE39150019C06A /* Model.xcdatamodeld */ = {
+		E07F8D9E25DE39150019C06A /* Project_1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				E07F8D9F25DE39150019C06A /* Model.xcdatamodel */,
 			);
 			currentVersion = E07F8D9F25DE39150019C06A /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			path = Project_1.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -28,6 +28,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         
         title = "할 일"
         view.addSubview(tableView)
+        getAllItems()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
