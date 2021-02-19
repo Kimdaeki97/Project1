@@ -39,7 +39,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @objc private func didTapAdd() {
-        let alert = UIAlertController(title: "할일 추가",
+        let alert = UIAlertController(title: "추가",
                                       message: "추가할 사항을 적어주세요.",
                                       preferredStyle: .alert)
         alert.addTextField(configurationHandler: nil)
@@ -77,7 +77,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         sheet.addAction(UIAlertAction(title: "취소", style: .cancel, handler: nil))
         sheet.addAction(UIAlertAction(title: "수정", style: .default, handler: { _ in
             
-            let alert = UIAlertController(title: "수정하기",
+            let alert = UIAlertController(title: "수정",
                                           message: "수정할 사항을 적어주세요",
                                           preferredStyle: .alert)
             alert.addTextField(configurationHandler: nil)
