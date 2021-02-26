@@ -92,7 +92,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
             
             self.present(alert, animated: true)
         }))
-        sheet.addAction(UIAlertAction(title: "삭제", style: .destructive, handler: { [weak self] _ in
+        sheet.addAction(UIAlertAction(title: "완료", style: .destructive, handler: { [weak self] _ in
             self?.deleteItem(item: item)
         }))
         
