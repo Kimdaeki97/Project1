@@ -7,6 +7,7 @@ target 'Project_1' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Analytics'
 pod 'GoogleSignIn'
 
 end
