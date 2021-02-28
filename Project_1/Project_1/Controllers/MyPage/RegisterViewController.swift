@@ -10,16 +10,49 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+    @IBOutlet var SGIDTextField: UITextField!{
+        didSet {
+            let grayPlaceholderText = NSAttributedString(string: "ID",
+                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+            
+            SGIDTextField.attributedPlaceholder = grayPlaceholderText
+        }
+    }
+    @IBOutlet var SGPWTextField: UITextField!{
+        didSet {
+            let grayPlaceholderText = NSAttributedString(string: "PASSWORD",
+                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+            
+            SGPWTextField.attributedPlaceholder = grayPlaceholderText
+        }
+    }
+    @IBOutlet var SGNameTextField: UITextField!{
+        didSet {
+            let grayPlaceholderText = NSAttributedString(string: "NAME",
+                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+            
+            SGNameTextField.attributedPlaceholder = grayPlaceholderText
+        }
+    }
+    
     @IBOutlet var btnForLoginViewController: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUpElements()
         
         self.navigationController?.isNavigationBarHidden = true
         
     }
 
+    func setUpElements() {
+        // 스타일
+        Utilities.styleTextField(SGIDTextField)
+        Utilities.styleTextField(SGPWTextField)
+        Utilities.styleTextField(SGNameTextField)
+    }
+    
     @IBAction func onLoginViewControllerBtnClicked(_ sender: UIButton) {
         // 디버깅을 하기 위해 print로 로그를 찍는다.
         print("RegisterViewController - onLoginViewControllerBtnClicked() called / 로그인 버튼 클릭!!")
