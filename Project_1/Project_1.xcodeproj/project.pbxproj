@@ -12,6 +12,7 @@
 		E0306E7125DCF5AB0061BD62 /* noun_person_2824791.png in Resources */ = {isa = PBXBuildFile; fileRef = E0306E7025DCF5AB0061BD62 /* noun_person_2824791.png */; };
 		E0306E7725DD0A710061BD62 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0306E7625DD0A710061BD62 /* SettingViewController.swift */; };
 		E0306E7B25DD22EB0061BD62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0306E7A25DD22EB0061BD62 /* HomeViewController.swift */; };
+		E040622525EFA8B100CB2392 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E040622425EFA8B100CB2392 /* Constants.swift */; };
 		E07F8DA025DE39150019C06A /* Project_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E07F8D9E25DE39150019C06A /* Project_1.xcdatamodeld */; };
 		E07F8DD725DE4DA30019C06A /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F8DD625DE4DA30019C06A /* ToDoListViewController.swift */; };
 		E07F8DDD25DE57450019C06A /* ToDoListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F8DDB25DE57450019C06A /* ToDoListItem+CoreDataClass.swift */; };
@@ -38,6 +39,7 @@
 		E0306E7025DCF5AB0061BD62 /* noun_person_2824791.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_person_2824791.png; sourceTree = "<group>"; };
 		E0306E7625DD0A710061BD62 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		E0306E7A25DD22EB0061BD62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E040622425EFA8B100CB2392 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E07F8D9F25DE39150019C06A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E07F8DD625DE4DA30019C06A /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		E07F8DDB25DE57450019C06A /* ToDoListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDoListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E07F8E0925EB64A90019C06A /* Utilities.swift */,
+				E040622425EFA8B100CB2392 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				E07F8DA025DE39150019C06A /* Project_1.xcdatamodeld in Sources */,
 				E07F8DD725DE4DA30019C06A /* ToDoListViewController.swift in Sources */,
 				E07F8E0A25EB64A90019C06A /* Utilities.swift in Sources */,
+				E040622525EFA8B100CB2392 /* Constants.swift in Sources */,
 				E091D22325D7F0CF00C308B6 /* AppDelegate.swift in Sources */,
 				E091D22525D7F0CF00C308B6 /* SceneDelegate.swift in Sources */,
 				E0306E7B25DD22EB0061BD62 /* HomeViewController.swift in Sources */,

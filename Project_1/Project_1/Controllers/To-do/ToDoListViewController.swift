@@ -36,6 +36,7 @@ class ToDoListViewController: UIViewController, UITableViewDelegate, UITableView
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
                                                             action: #selector(didTapAdd))
+        navigationController?.navigationBar.tintColor = UIColor.label
     }
     
     @objc private func didTapAdd() {
